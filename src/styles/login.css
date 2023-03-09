@@ -1,0 +1,46 @@
+
+.col__login{
+    text-align: center;
+   
+
+
+}
+
+
+
+.form__groups input{
+    border: 1px solid var(--primary-color);
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.btn__login{
+    width: 40%;
+    border: none;
+        outline: none;
+        padding: 8px 20px;
+        border-radius: 5px;
+        background: var(--primary-color);
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+        
+        
+}
+
+.auth__form p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.auth__form input[type= 'file']{
+    color:black;
+    border:none;
+    margin-left: 350px;
+    cursor: pointer;
+    
+}

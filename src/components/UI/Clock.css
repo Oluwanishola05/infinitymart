@@ -1,0 +1,42 @@
+.clock__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 5;
+}
+
+.clock__data{
+    display: flex;
+    align-items: center;
+    gap: 5;
+}
+
+.NumDays{
+    margin-bottom: 3px;
+    color: #fff;
+
+}
+
+.days{
+    margin-top: 3px;
+    color: #fff;
+}
+.sp{
+    color: #fff;
+    font-weight: 700;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 992px){
+     .clock__wrapper{
+        justify-content: center;
+     }
+     .clock__data h1{
+        font-size: 3.1rem !important;
+     }
+
+     .clock__data h5{
+        font-size: 1.5rem !important;
+     }
+
+     
+}

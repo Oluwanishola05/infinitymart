@@ -1,0 +1,241 @@
+:root {
+    --card-bg-01: #fdefe6;
+    --card-bg-02: #d6e5fb;
+    --card-bg-03: #ceebe9;
+    --card-bg-04: #e2f2b2;
+    --primary-color: #0a1d37;
+    --hero-bg: #d6e5fb;
+    --heading-fontSize: 2rem;
+    --small-text-color: #999;
+    --heading-text-color: #0a1d37;
+  }
+
+
+.header{
+    width: 100%;
+     height:  70px;
+     line-height: 70px;
+
+}
+.nav__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.logo img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.logo h1 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--primary-color)
+    }
+
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+    margin-bottom: 0px;
+ 
+} 
+
+.nav__item a{
+    color: var(--primary-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav__icons{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    font-size: 2.5rem;
+ }
+
+ .nav__icons span i {
+    
+    color: var(--primary-color);
+
+ }
+
+ .cart__icon, 
+ .fav__icon{
+    position:relative;
+ }
+
+ .cart__icon i{
+    cursor: pointer;
+ }
+
+ #badge{
+    position: absolute; ;
+    top:22% ;
+    right:-30%;
+    width: 18px;
+    height: 18px;
+    background: var(--heading-text-color);
+    color: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-size: 0.9rem;
+    font-weight: 600;
+    z-index: 10;
+    text-align: center;
+ }
+ .nav__icons .profile img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+ }
+
+ .nav__icons .profile{
+    position: relative;
+    z-index: 9;
+ }
+
+ .nav__icons .profile .profile__actions {
+    position: absolute;
+    top:98%;
+    left:0;
+    width: 100px;
+    z-index: 10;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--card-bg-01);
+    line-height: 30px;
+    display: none;
+    cursor: pointer;
+ }
+
+ .nav__icons .profile .show__profileActions{
+    display: block;
+    position: absolute;
+    top:98%;
+    left:0;
+    width: 100px;
+    z-index: 10;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--card-bg-01);
+    line-height: 30px;
+    font-size: 15px;
+    flex: column;
+    
+ }
+
+
+
+ .profile__actions span{
+    font-size: 15px;
+ }
+
+ .profile__actions li {
+    padding-top:1px;
+    text-decoration: none;
+    margin-top: none;
+    font-weight: bold;
+    
+ }
+
+ .mobile__menu{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    display: none;
+ }
+
+ .nav__active{
+    font-weight: 800 !important;
+    
+ }
+
+ .sticky__header{
+    width:100%;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 3px 3px 8px -3px #ddd;
+    background: #fff;
+
+ }
+
+ @media only screen and (max-width: 768px){
+    .navigation{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.53);
+        z-index: 9999;
+        display: none;
+    }
+
+    .menu{
+        position:absolute;
+        top:0;
+        right: 0;
+        width:250px;
+        height: 100%;
+        background: #fff;
+        z-index: 99999;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .active__menu{
+        display: block;
+
+    }
+    .mobile__menu{
+        display: block;
+    }
+
+    .mobile__menu span i{
+        font-size: 1.9rem !important;
+    }
+
+    .logo img{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .logo h1{
+        font-size: 1.2rem;
+    }
+
+    .fav__icon i, .cart__icon i{
+     font-size: 2rem !important;
+    }
+
+    .nav__icons span img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+   
+
+    .header{
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+    }
+ }

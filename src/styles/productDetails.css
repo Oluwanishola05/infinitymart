@@ -1,0 +1,68 @@
+
+
+img{
+    width: 60%;
+    height:30rem;
+}
+
+.pad{
+    padding-top: 40px;
+}
+
+.product__details{
+    margin-top: 80px;
+    justify-content: center;
+    padding: 0px;
+}
+
+.buy__btn{
+    margin-top: 20px;
+}
+
+.product__details h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.product__rating{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.product__rating span i{
+    color:coral;
+}
+
+.product__rating p span{
+    color: coral;
+    font-weight: 500;
+}
+
+.product__price{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family:'Times New Roman', Times, serif
+}
+
+.tab__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+.active__tab{
+    font-weight: 800;
+}
+
+.tab__content{
+    margin-top: 15px;
+}
+
