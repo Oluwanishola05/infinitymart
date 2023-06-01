@@ -1,0 +1,55 @@
+
+.col__login{
+    text-align: center;
+   
+
+
+}
+
+.paymentContainer{
+   justify-content: center;
+   width: 40%;
+   background-color:aliceblue;
+   align-items: center;
+
+
+}
+
+.paymentForm{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+.payment__groups input{
+    border: 1px solid var(--primary-color);
+    width: 40%;
+    
+    border-radius: 5px;
+    
+}
+
+.btn__login{
+    width: 40%;
+    border: none;
+        outline: none;
+        padding: 8px 20px;
+        border-radius: 5px;
+        background: var(--primary-color);
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+        
+        
+}
+
+.paymentForm {
+    margin-top: 20px;
+    font-size: 15px;
+}

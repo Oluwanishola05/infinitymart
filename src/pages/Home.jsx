@@ -13,8 +13,13 @@ import ProductList from "../components/UI/ProductList";
 import products from "../assets/data/products";
 import counterImg from "../assets/images/counter-timer-img.png";
 import Clock from "../components/UI/Clock";
+import useGetData from "../custom hooks/useGetData";
  
 const Home = () => {
+
+    //const {data: products} = useGetData('products')
+
+
     const [trendingProducts, setTrendingProducts] = useState([]);
     const [bestProducts, setBestSalesProducts] = useState([]);
     const [mobileProducts, setMobileProducts] = useState([]);
@@ -55,7 +60,7 @@ const Home = () => {
     setPopularProducts(filteredPopularProducts)
     setShoeProducts(filteredShoeProducts)
     setWomanTopProducts(filteredWomanTopProducts)
-        }, []);
+        }, [products]);
     
     return(
         <Helmet title={"Home"}>
@@ -113,6 +118,7 @@ const Home = () => {
                             <h2 className="section__title">Best Sales</h2>
                         </Col>
                         <ProductList data={bestProducts} />
+                        
                        
                      </Row>
                 </Container>
@@ -161,7 +167,7 @@ const Home = () => {
                         <Col lg="12" className="text-center">
                             <h2 className="section__title">Popular in Category</h2>
                             <ProductList data={popularProducts} />
-                            
+                            <ProductList data={womanTopProducts} />
                         </Col>
                     </Row>
                 </Container>

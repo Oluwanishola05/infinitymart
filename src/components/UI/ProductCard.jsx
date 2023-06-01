@@ -11,6 +11,10 @@ import { cartActions } from "../../redux/slice/cartSlice";
 
 const ProductCard = ({item}) => {
 
+    
+        
+      
+
 const dispatch = useDispatch()
 
 const addToCart = () =>{
@@ -19,6 +23,7 @@ const addToCart = () =>{
         productName: item.productName,
         price: item.price,
         imgUrl: item.imgUrl,
+       
     })
     );
 
@@ -40,7 +45,8 @@ const addToCart = () =>{
             </div>
 
             <div className="product__card-bottom">
-                <span className="price">${item.price}</span>
+                <span className="price"><span>&#8358;</span> {item.price}</span>
+                
                 <motion.span whileTap={{ scale: 1.2}} onClick={addToCart}>
                     <i class="ri-add-line"></i></motion.span>
             </div>

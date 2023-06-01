@@ -1,0 +1,36 @@
+.revenue__box, 
+.order__box,
+.product__box,
+.user__box{
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.revenue__box{
+    background: #FFC1A2;
+}
+
+.product__box{
+    background: #FFE1AD;
+}
+
+.order__box{
+    background: #E2F3FD;
+}
+
+.user__box{
+    background: #CFB3A1;
+}
+
+.headin{
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.quan{
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}

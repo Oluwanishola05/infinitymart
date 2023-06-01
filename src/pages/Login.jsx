@@ -8,6 +8,8 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase.config";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import LoadingSpinner from '../components/spinner/LoadingSpinner';
+
 
 
 
@@ -50,7 +52,7 @@ const Login = () => {
                     <Row>  
                         {
                             loading ? <Col lg='12' className="text-center">
-                                <h5>Loading....</h5>
+                                <LoadingSpinner/>
                             </Col> : 
                                 <Col className="col__login">
                                 <h3 className="login">Login</h3>

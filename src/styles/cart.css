@@ -52,3 +52,17 @@ td, th{
     
 }
 
+.increment {
+    color: blue;
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+
+.decrement {
+    color: red;
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+
