@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import Helmet from "../components/Helmet/Helmet";
-import CommonSection from "../components/UI/CommonSection";
+
 import { Container, Row, Col, Form, FormGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../styles/login.css";
@@ -36,7 +36,7 @@ const Login = () => {
             console.log(user)
             setLoading(false)
             toast.success('Successfully Logged In')
-            navigate('/checkout')
+            navigate('/home')
             
         } catch (error) {
             setLoading(false)
