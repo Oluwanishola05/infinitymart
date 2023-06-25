@@ -6,6 +6,11 @@
 
 }
 
+.login{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
 .paymentContainer{
    justify-content: center;
    width: 40%;

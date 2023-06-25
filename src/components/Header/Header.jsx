@@ -74,6 +74,10 @@ const Header = () => {
         navigate('/cart')
     };
 
+    const logoLinkHome = () => {
+        navigate('/home')
+    };
+
     const toggleProfileActions = () => 
     profileActionsRef.current.classList.toggle('show__profileActions')
     
@@ -89,7 +93,7 @@ const Header = () => {
                         <div className="logo">
                             <img src={logo} alt="logo" />
                             <div>
-                                <h1>InfinityMart</h1>
+                                <p onClick={logoLinkHome}>InfinityMart</p>
                                
                             </div>
                         </div>

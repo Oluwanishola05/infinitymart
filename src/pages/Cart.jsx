@@ -7,9 +7,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { cartActions } from "../redux/slice/cartSlice";
 import { useSelector, useDispatch } from "react-redux";
-import { useState } from "react";
+
 import { Link } from "react-router-dom";
-import PayStackIntegretion from "./PayStackIntegretion";
+
 
 
 
@@ -137,26 +137,17 @@ const Tr = ({item}) => {
     const deleteProduct = () => {
         dispatch(cartActions.deleteItem(item.id)) 
     }
+    
+    const reduceProduct = () => {
+        dispatch(cartActions.reduceItem(item.id)) 
+    }
 
-    const totalAmount = useSelector((state) => state.cart.totalAmount);
-    const [quantityCart, setQuantityCart] = useState(1);
-    const [ setFinalAmount] = useState(totalAmount);
+    const increaseProduct = () => {
+        dispatch(cartActions.increaseItem(item.id)) 
+    }
+    
 
-    const decrement = (item) =>{
-        if(quantityCart <= 1){
-            setQuantityCart(1);
-            setFinalAmount(totalAmount);
-    }
-    if(quantityCart > 1){
-        setQuantityCart(quantityCart - 1);
-        setFinalAmount(totalAmount - item.price);
-    }
-    }
-    const increment = (item) =>{
-        setQuantityCart(quantityCart + 1);
-        setFinalAmount(totalAmount + item.price);
-    }
-   
+    
     
    
     return (
@@ -166,9 +157,9 @@ const Tr = ({item}) => {
                                         
                                         <td><span>&#8358;</span> {item.price}</td>
                                         <td>
-                                            <span className="decrement" onClick={decrement}> - </span>
+                                            <span className="decrement" onClick={reduceProduct}> - </span>
                                             {item.quantity}
-                                            <span className="increment" onClick={increment}> +</span>
+                                            <span className="increment" onClick={increaseProduct}> +</span>
                                         </td>
                                         <td>
                                             <motion.i 

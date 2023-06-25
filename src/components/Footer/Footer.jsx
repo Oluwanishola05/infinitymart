@@ -1,11 +1,15 @@
 import React from "react";
 import './Footer.css';
 
+import { FaTwitter, FaInstagram, FaFacebook, FaLinkedin, FaGoogle } from 'react-icons/fa';
+
 
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+
+    
 
     const years = new Date().getFullYear();
     return(
@@ -16,15 +20,14 @@ const Footer = () => {
                     <div className="logo">
                           
                             <div>
-                                <h1 id="text-footer">InfinityMart</h1>
+                                <p id="text-footer">InfinityMart</p>
                             </div>
                     </div>
 
                     <p className="footer__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Neque, eveniet temporibus sequi deleniti rem delectus amet. 
-                        Vitae molestias dolore eos ipsam iste architecto, 
-                        natus praesentium excepturi nemo laborum optio quis.
+                        Infinity Mart is a marketplace where you can buy and sell products online in the easiest way possible
+                        ! We are here to make your life easier by providing an easy platform for all of our customers so
+                        that there trasaction will be easy.
 
                     </p>
                     </Col>
@@ -36,7 +39,8 @@ const Footer = () => {
                             
                                 <div className="quickLink">
                                     <span className="icon"><i class="ri-map-pin-line"></i></span>
-                                    <p className="address">Agege Motor Road, Mushin, Lagos State.</p>
+                                    <p className="address">Agege Motor Road, Mushin, <br/>
+                                                            Lagos State.</p>
                                 
 
                                 
@@ -112,7 +116,28 @@ const Footer = () => {
                     </Col>
 
                     <Col lg='12' md="12">
-                        <p className="footer__copyright">Copyright {years} developed by Oloworise Joshua. All rights reserved.</p>
+                    
+                    </Col>
+
+                    <Col lg='12' md="12">
+                        <div className="social-icon">
+                     
+                           { /*
+                            <FaTwitter size={25} className="media" onClick={() => window.open( 'http://www.twitter.com')}/>
+                            <FaInstagram size={25} className="media" onClick={() => window.open( 'http://www.instagram.com')}/>
+                            <FaFacebook size={25} className="media" onClick={() => window.open( 'http://www.facebook.com')}/>
+                            <FaLinkedin size={25} className="media" onClick={() => window.open( 'http://www.linkedin.com')}/>
+                            <FaGoogle size={25} className="media" onClick={() => window.open( 'http://www.google.com')}/>
+    */}
+                            <FaFacebook size={25}  className="media" onClick={() => window.open('http://www.facebook.com')}/>
+                            <FaInstagram size={25} className="media" onClick={() => window.open('http://www.instagram.com')}/>
+                            <FaLinkedin size={25}  className="media" onClick={() => window.open('http://www.linkedin.com')}/>
+                            <FaTwitter size={25} className="media" onClick={() => window.open('http://www.twitter.com')}/>
+                            <FaGoogle size={25} className="media" onClick={() => window.open('http://www.google.com')}/>
+                            
+
+                        </div>
+                        <p className="footer__copyright">Copyright {years} ND 3 FINAL PROJECT. All rights reserved.</p>
                     </Col>
                 </Row>
             </Container>

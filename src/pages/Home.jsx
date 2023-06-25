@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 import Helmet from "../components/Helmet/Helmet";
 import { Container, Row, Col } from "react-bootstrap";
-import heroImg from "../assets/images/hero-img.png";
+
 import "../styles/home.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -13,7 +13,12 @@ import ProductList from "../components/UI/ProductList";
 import products from "../assets/data/products";
 import counterImg from "../assets/images/counter-timer-img.png";
 import Clock from "../components/UI/Clock";
-import useGetData from "../custom hooks/useGetData";
+
+import Slider from "./Slider";
+
+
+
+
  
 const Home = () => {
 
@@ -28,7 +33,7 @@ const Home = () => {
     const [popularProducts, setPopularProducts] = useState([]);
     const [shoeProducts, setShoeProducts] = useState([]);
     
-    const year = new Date().getFullYear();
+    
 
     useEffect(() => {
         const filteredTrendingProducts = products.filter(
@@ -65,35 +70,7 @@ const Home = () => {
     return(
         <Helmet title={"Home"}>
            
-            <section className="hero__section">
-                <Container>
-                    <Row>
-                        <Col lg='6' md='6'>
-                            <div className="hero__content">
-                                <p className="hero__subtitle">Trending Product in {year}</p>
-                                <h2>Make your Interior More Minimalistic & Modern</h2>
-                                <p className="hero__description">They combine high end furniture materials 
-                                    with creative styles that make them simply unique. 
-                                    Whether it's a bed base, a leather sofa, 
-                                    a solid wood dining table, or a sideboard, 
-                                    every piece of furniture can be a piece of luxury.
-                                </p>
-                                <motion.button whileTap={{scale: 1.2 }} className="buy__btn">
-                                    <Link className="buy__btn" to='/shop'>SHOP NOW</Link>
-                                </motion.button>
-
-                            </div>
-                        </Col>
-
-                        <Col lg='6' md='6'>
-                            <div className="hero__img">
-                            <img src={heroImg} alt="" className="img__hero"/>
-
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
+            <Slider/>
 
             <Services />
 
