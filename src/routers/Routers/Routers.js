@@ -16,7 +16,7 @@ import Dashboard from "../../admin/Dashboard";
 import Users from "../../admin/Users";
 import Success from "../../components/Stripe-success-cancel/success";
 import Cancel from "../../components/Stripe-success-cancel/cancel";
-import PayStackIntegretion from "../../pages/payStackIntegretion";
+import PayStackIntegretion from "../../pages/PayStackIntegretion";
 
 
 

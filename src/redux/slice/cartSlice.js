@@ -85,7 +85,7 @@ const cartSlice = createSlice({
         }
 
         if(existingItem.quantity == 0){
-            deleteItem
+          //  deleteItem;
         }
 
     
